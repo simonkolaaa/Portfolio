@@ -54,7 +54,7 @@ const about = {
   imageLink: require("../editable-stuff/hashirshoaeb.png"),
   imageSize: 375,
   message:
-    "My name is Simon Kola. I am a passionate Software Developer eager to build amazing projects. In my free time I like working on open source projects and learning new technologies.",
+    "My name is Simon. I am a fifth-year computer science student with a strong passion for programming and web development. I am currently studying and building projects using Python, Flask, HTML, and JavaScript.",
   resume: "",
 };
 
@@ -100,14 +100,12 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
+    { name: "Python", value: 85 },
+    { name: "Flask", value: 75 },
+    { name: "HTML/CSS", value: 90 },
+    { name: "JavaScript", value: 80 },
+    { name: "SQL", value: 70 },
     { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -126,7 +124,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "I'm an IT student currently studying Python, Flask, and Web Technologies. If you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "simon.kola@example.com",
 };
 
