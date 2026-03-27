@@ -9,6 +9,7 @@ import { NavLink } from "./home/migration";
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
   const [isTop, setIsTop] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const navbarMenuRef = React.useRef();
   const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -37,50 +38,58 @@ const Navigation = React.forwardRef((props, ref) => {
       className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"
         }`}
       expand="lg"
+      expanded={expanded}
     >
       <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
+      <Navbar.Toggle 
+        aria-controls="basic-navbar-nav" 
+        className="toggler" 
+        onClick={() => setExpanded(!expanded)}
+      />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-nav mr-auto">
-          {/* {
-            <NavLink className="nav-item lead">
-              <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
-            </NavLink>
-          } */}
           {repos.show && (
-
             <NavLink
               href={process.env.PUBLIC_URL + "/#projects"}
+              onClick={() => setExpanded(false)}
             >
-              Projects
+              Progetti GitHub
             </NavLink>
           )}
           <NavLink
             className="nav-item lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
+            href={process.env.PUBLIC_URL + "/#aboutme"}
+            onClick={() => setExpanded(false)}
           >
-            Resume
+            About
           </NavLink>
-          {about.show && (
+          {experiences.show && (
             <NavLink
               className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+              href={process.env.PUBLIC_URL + "/#experience"}
+              onClick={() => setExpanded(false)}
             >
-              About
+              Esperienze
             </NavLink>
           )}
           {skills.show && (
             <NavLink
               className="nav-item lead"
               href={process.env.PUBLIC_URL + "/#skills"}
+              onClick={() => setExpanded(false)}
             >
               Skills
             </NavLink>
           )}
+          <NavLink
+            className="nav-item lead"
+            href={process.env.PUBLIC_URL + "/#contact"}
+            onClick={() => setExpanded(false)}
+          >
+            Contatti
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
