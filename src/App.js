@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { LanguageContext, LanguageProvider } from "./context/LanguageContext";
 import {
   navBar,
   mainBody,
@@ -24,19 +25,21 @@ import Leadership from "./components/home/Leadership.jsx";
 import Experience from "./components/home/Experience";
 
 const Home = React.forwardRef((props, ref) => {
+  const { language } = React.useContext(LanguageContext);
+
   return (
     <>
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
+        message={mainBody[language].message}
         icons={mainBody.icons}
         ref={ref}
       />
       {about.show && (
         <AboutMe
-          heading={about.heading}
-          message={about.message}
+          heading={about[language].heading}
+          message={about[language].message}
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
@@ -44,12 +47,12 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {
         experiences.show && (
-          <Experience experiences={experiences}/>
+          <Experience experiences={experiences[language]}/>
         )
       }
       {repos.show && (
         <Project
-          heading={repos.heading}
+          heading={repos[language].heading}
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
@@ -57,17 +60,17 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {leadership.show && (
         <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
+          heading={leadership[language].heading}
+          message={leadership[language].message}
           img={leadership.images}
           imageSize={leadership.imageSize}
         />
       )}
       {skills.show && (
         <Skills
-          heading={skills.heading}
+          heading={skills[language].heading}
           hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
+          softSkills={language === "en" && skills.softSkillsEn ? skills.softSkillsEn : skills.softSkills}
         />
       )}
       
@@ -75,8 +78,9 @@ const Home = React.forwardRef((props, ref) => {
   );
 });
 
-const App = () => {
+const MainAppContent = () => {
   const titleRef = React.useRef();
+  const { language } = React.useContext(LanguageContext);
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
@@ -84,18 +88,24 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
       </Routes>
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>
         {getInTouch.show && (
           <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
+            heading={getInTouch[language].heading}
+            message={getInTouch[language].message}
             email={getInTouch.email}
           />
         )}
       </Footer>
     </BrowserRouter>
+  );
+};
+
+const App = () => {
+  return (
+    <LanguageProvider>
+      <MainAppContent />
+    </LanguageProvider>
   );
 };
 

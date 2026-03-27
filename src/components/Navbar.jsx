@@ -5,8 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, skills, experiences } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
+import { LanguageContext } from "../context/LanguageContext";
 
 const Navigation = React.forwardRef((props, ref) => {
+  const { language, setLanguage } = React.useContext(LanguageContext);
   // const { showBlog, FirstName } = config;
   const [isTop, setIsTop] = useState(true);
   const [expanded, setExpanded] = useState(false);
@@ -55,7 +57,7 @@ const Navigation = React.forwardRef((props, ref) => {
               href={process.env.PUBLIC_URL + "/#projects"}
               onClick={() => setExpanded(false)}
             >
-              Progetti GitHub
+              {language === "it" ? "Progetti GitHub" : "GitHub Projects"}
             </NavLink>
           )}
           <NavLink
@@ -71,7 +73,7 @@ const Navigation = React.forwardRef((props, ref) => {
               href={process.env.PUBLIC_URL + "/#experience"}
               onClick={() => setExpanded(false)}
             >
-              Esperienze
+              {language === "it" ? "Esperienze" : "Experiences"}
             </NavLink>
           )}
           {skills.show && (
@@ -88,8 +90,16 @@ const Navigation = React.forwardRef((props, ref) => {
             href={process.env.PUBLIC_URL + "/#contact"}
             onClick={() => setExpanded(false)}
           >
-            Contatti
+            {language === "it" ? "Contatti" : "Contact"}
           </NavLink>
+          
+          <Nav.Link 
+            className="nav-item lead font-weight-bold ml-lg-4 text-primary"
+            onClick={() => setLanguage(language === "it" ? "en" : "it")}
+            style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+          >
+            {language === "it" ? "🇬🇧 EN" : "🇮🇹 IT"}
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
