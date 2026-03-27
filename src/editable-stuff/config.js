@@ -13,7 +13,7 @@ const mainBody = {
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/SimonKolaa",
+      url: "https://github.com/simonkolaaa",
     },
     {
       image: "fa-facebook",
@@ -73,20 +73,20 @@ const repos = {
 
 // Leadership SECTION
 const leadership = {
-  show: false,
-  heading: "Leadership",
+  show: true,
+  heading: "Progetti Speciali e Collaborazioni",
   message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+    "Durante il mio percorso scolastico ho collaborato a diversi progetti in team, sviluppando logiche backend in Python (Flask) e interfacce web responsive. Lavorare in gruppo mi ha insegnato a comunicare meglio, risolvere problemi complessi in team e strutturare codice pulito. Amo affrontare nuove sfide informatiche e aiutare i compagni nel problem solving.",
   images: [
     { 
       img: require("../editable-stuff/simonkola.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+      label: "Problem Solving", 
+      paragraph: "Amo trovare la soluzione ottimale ai problemi logici." 
     },
     { 
       img: require("../editable-stuff/simonkola.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+      label: "Teamwork", 
+      paragraph: "Codice scritto e versionato in team usando Git e GitHub." 
     },
   ],
   imageSize: {
@@ -129,18 +129,18 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
-  heading: "Experiences",
+  show: true,
+  heading: "Percorso ed Esperienze",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
+      role: 'Sviluppatore Web & Backend (Progetti IT)',// Here Add Company Name
       companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      date: 'Settembre 2025 – Presente',
     },
     {
-      role: 'Front-End Developer',
+      role: 'Studente di Informatica',
       companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      date: 'Fino al 2026',
     },
   ]
 }
