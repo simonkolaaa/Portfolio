@@ -51,10 +51,10 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/simon_profile.png"),
   imageSize: 375,
   message:
-    "My name is Simon. I am a fifth-year computer science student with a strong passion for programming and web development. I am currently studying and building projects using Python, Flask, HTML, and JavaScript.",
+    "Sono uno studente di informatica che ha studiato Python, Flask, HTML, JS, JSON ecc.",
   resume: "",
 };
 
