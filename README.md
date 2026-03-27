@@ -8,7 +8,7 @@
   <a href="https://simonkolaaa.github.io/Portfolio" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/hashirshoaeb/home/master/public/favicon.ico" height="30" width="30" alt="personal website" />
   </a>
-  <a href="https://github.com/simonkolaaa" target="_blank">
+  <a href="https://github.com/SimonKolaa" target="_blank">
     <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" width="30" alt="github" />
   </a>
 </p>
@@ -33,5 +33,5 @@
 </p>
 
 <p align="center">
-  <img height="140px" src="https://github-readme-stats-hephaest.vercel.app/api/top-langs/?username=simonkolaaa&layout=compact&count_private=true&theme=github_dark&hide=css">
+  <img height="140px" src="https://github-readme-stats-hephaest.vercel.app/api/top-langs/?username=SimonKolaa&layout=compact&count_private=true&theme=github_dark&hide=css">
 </p>

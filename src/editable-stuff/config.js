@@ -13,7 +13,7 @@ const mainBody = {
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/simonkolaaa",
+      url: "https://github.com/SimonKolaa",
     },
     {
       image: "fa-facebook",
@@ -51,7 +51,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/simon_profile.png"),
+  imageLink: require("../editable-stuff/simonkola.png"),
   imageSize: 375,
   message:
     "Sono uno studente di informatica che ha studiato Python, Flask, HTML, JS, JSON ecc.",
@@ -66,7 +66,7 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "simonkolaaa", //i.e."johnDoe12Gh"
+  gitHubUsername: "SimonKolaa", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
 };
