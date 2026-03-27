@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <strong>IT Student | Aspiring Software Engineer | Tech Enthusiast</strong>
+  <strong>IT Student | Future Software Engineer | Tech Enthusiast</strong>
 </p>
 
 <p align="center">
@@ -24,58 +24,26 @@
 
 ---
 
-## 📖 Il Mio Progetto: Portfolio Full-Stack
+### 🚀 About Me
+I'm a fifth-year IT student passionate about building clean, efficient, and user-friendly web applications. I love solving complex problems and turning ideas into code.
 
-Ho creato questo portfolio personalizzato inizialmente per avere un sito vetrina dove poter raccontare chi sono, mostrare le mie competenze e i miei progetti scolastici. Essendo un progetto in continua evoluzione, continuerò ad aggiornarlo man mano che il mio percorso di studi avanza e imparo cose nuove.
-
-Successivamente, su prezioso consiglio del mio professore di informatica, ho deciso di fare un salto di qualità trasformando questo semplice sito statico in un vero e proprio sistema **Full-Stack**. L'obiettivo era creare un form di contatto realmente funzionante nella sezione *Get in Touch*, da poter collegare a un backend remoto per ricevere messaggi da chi visita la pagina.
-
-### 🏗️ L'Evoluzione del Backend
-Per costruire il lato server, ho deciso di non reinventare la ruota ma applicare le conoscenze scolastiche: **ho preso come struttura di partenza un "Blog Scolastico" sviluppato precedentemente in classe con Flask**. 
-
-L'ho svuotato della parte visiva (HTML/Template) e l'ho modificato per usarlo esclusivamente come API "Headless", mantenendone l'impalcatura solida che conoscevamo:
-- Pattern **Application Factory** (`create_app`)
-- Divisione in **Blueprint** per le rotte API
-- Layer dei **Repositories** dedicato all'interazione sicura col database
-
-### 💻 Perché ho usato queste Tecnologie
-- **Frontend (Questo Repository):** Sviluppato in **React**. L'ho scelto perché garantisce un caricamento immediato e fluido delle pagine (Single Page Application) e una gestione moderna dei componenti UI. È ospitato su *GitHub Pages*.
-- **Backend API:** Scritto in **Python** con **Flask**. Essendo un framework molto leggero e modulare, è risultato perfetto per esporre un endpoint RESTful velocissimo. Ho aggiunto la libreria `flask-cors` per permettere al form React di inviare asincronamente i dati in sicurezza.
-- **Database:** **SQLite**. La sua natura basata su un singolo file locale è eccellente e rapida per salvare tabelle semplici (come i messaggi di contatto) senza sovraccaricare il server.
-- **Deploy Backend:** Il codice Python è stato caricato su un repository separato ed è ospitato da **PythonAnywhere**. Questo mi garantisce che il server sia in ascolto 24h ore su 24 per ricevere i moduli dal portfolio, salvando persistentemente i dati su disco cloud.
+- 👨‍🎓 Studying Computer Science
+- 💻 Specialized in **Python (Flask)** and **Web Technologies (HTML/JS/CSS)**
+- 🌍 Exploring the world of Software Engineering
 
 ---
 
-## 📂 Struttura dell'Architettura
+### 🛠️ My Tech Stack
 
-Questa è la mappa semplificata di come i due rami del mio progetto si interconnettono:
-
-```text
-├── 🌍 SimonKola's Portfolio (Frontend / React) -- [IN QUESTO REPO]
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── home/
-│   │   │       └── GetInTouch.jsx   <-- Form che invia i dati (Fetch POST)
-│   │   └── App.js
-│   └── package.json
-│
-└── ☁️ PythonAnywhere Server (Backend / Flask) -- [REPO SEPARATO]
-    ├── app/
-    │   ├── __init__.py           <-- Factory & CORS config
-    │   ├── api.py                <-- Route d'ascolto (POST /api/contact)
-    │   ├── db.py                 <-- Connessione Database
-    │   └── repositories/
-    │       └── contact_repo.py   <-- Query Builder SQLite (INSERT INTO)
-    ├── instance/
-    │   └── portfolio.sqlite      <-- Il database in cui si salvano i messaggi
-    └── run.py                    <-- Entry point del server (WSGI Server)
-```
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,flask,html,css,js,git,vscode,github,mysql,react,bootstrap&theme=dark" />
+  </a>
+</p>
 
 ---
 
-### 📊 Le Mie Statistiche GitHub
-
-Questo lavoro mi ha permesso di unire finalmente ciò che studio a scuola con le dinamiche reali di una vera architettura disaccoppiata moderna. E nel tempo libero... si continua a codare!
+### 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=simonkolaaa&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" height="170" alt="stats report" />
@@ -85,6 +53,8 @@ Questo lavoro mi ha permesso di unire finalmente ciò che studio a scuola con le
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=simonkolaaa&theme=tokyonight&hide_border=true" alt="streak stats" />
 </p>
+
+---
 
 <p align="center">
   Built with ❤️ by Simon Kola
