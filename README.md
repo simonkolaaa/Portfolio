@@ -11,9 +11,6 @@
   <a href="https://simonkolaaa.github.io" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-2581-2c3e50?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
   </a>
-  <a href="https://linkedin.com/in/simon-kola" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
   <a href="https://instagram.com/simonkolaaa" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
@@ -24,16 +21,16 @@
 
 ---
 
-### 🚀 About Me
+###  About Me
 I'm a fifth-year IT student passionate about building clean, efficient, and user-friendly web applications. I love solving complex problems and turning ideas into code.
 
-- 👨‍🎓 Studying Computer Science
-- 💻 Specialized in **Python (Flask)** and **Web Technologies (HTML/JS/CSS)**
-- 🌍 Exploring the world of Software Engineering
+- Studying Computer Science
+- Specialized in **Python (Flask)** and **Web Technologies (HTML/JS/CSS)**
+- Exploring the world of Software Engineering
 
 ---
 
-### 🛠️ My Tech Stack
+### My Tech Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -43,7 +40,7 @@ I'm a fifth-year IT student passionate about building clean, efficient, and user
 
 ---
 
-### 📊 GitHub Stats
+###  GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=simonkolaaa&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" height="170" alt="stats report" />
