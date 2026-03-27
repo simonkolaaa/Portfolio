@@ -82,7 +82,6 @@ const skills = {
     { name: "HTML/CSS", value: 90 },
     { name: "JavaScript", value: 80 },
     { name: "SQL", value: 70 },
-    { name: "C/C++", value: 65 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
