@@ -58,11 +58,20 @@ const about = {
 // PROJECTS SECTION
 const repos = {
   show: true,
-  it: { heading: "Progetti Recenti" },
-  en: { heading: "Recent Projects" },
-  gitHubUsername: "simonkolaaa", //i.e."johnDoe12Gh"
-  reposLength: 6,
-  specificRepos: ["portfolio-backend", "checkfeed-bot"],
+  it: { heading: "Progetti GitHub" },
+  en: { heading: "GitHub Projects" },
+  profiles: [
+    {
+      username: "simonkolaaa",
+      reposLength: 0,
+      specificRepos: ["portfolio-backend", "checkfeed-bot", "jarvis"]
+    },
+    {
+      username: "SimonKolaa",
+      reposLength: 0,
+      specificRepos: ["Repo5M", "Progetto_5M", "board-game-app"]
+    }
+  ]
 };
 
 // Leadership SECTION

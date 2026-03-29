@@ -17,48 +17,51 @@ const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
-const Project = ({ heading, username, length, specfic }) => {
-  const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
-  const specficReposAPI = `${API}/repos/${username}`;
-  const dummyProjectsArr = new Array(length + specfic.length).fill(
-    dummyProject
-  );
-
+const Project = ({ heading, profiles }) => {
   const [projectsArray, setProjectsArray] = useState([]);
+
+  const totalLength = profiles.reduce((acc, p) => acc + (p.reposLength || 0) + (p.specificRepos ? p.specificRepos.length : 0), 0);
+  const dummyProjectsArr = new Array(totalLength).fill(dummyProject);
 
   const fetchRepos = useCallback(async () => {
     let repoList = [];
-    try {
-      // getting all repos
-      const response = await axios.get(allReposAPI);
-      // filter out the portfolio repo from the list
-      const filteredRepos = response.data.filter(repo => repo.name.toLowerCase() !== "portfolio");
-      // slicing to the length
-      repoList = [...filteredRepos.slice(0, length)];
-      // adding specified repos
+    for (const profile of profiles) {
+      const { username, reposLength, specificRepos } = profile;
+      const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
+      const specficReposAPI = `${API}/repos/${username}`;
+
       try {
-        for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
-          repoList.push(response.data);
+        if (reposLength > 0) {
+          const response = await axios.get(allReposAPI);
+          const filteredRepos = response.data.filter(repo => repo.name.toLowerCase() !== "portfolio");
+          repoList = [...repoList, ...filteredRepos.slice(0, reposLength)];
+        }
+
+        if (specificRepos && specificRepos.length > 0) {
+          for (let repoName of specificRepos) {
+            try {
+              const response = await axios.get(`${specficReposAPI}/${repoName}`);
+              repoList.push(response.data);
+            } catch (error) {
+              console.error(`Error fetching ${repoName} for ${username}:`, error.message);
+            }
+          }
         }
       } catch (error) {
-        console.error(error.message);
+        console.error(`Error fetching repos for ${username}:`, error.message);
       }
-      // setting projectArray
-      // remove duplication
-      const uniqueNames = new Set();
-      const uniqueRepos = repoList.filter(repo => {
-        if (!uniqueNames.has(repo.name)) {
-          uniqueNames.add(repo.name);
-          return true;
-        }
-        return false;
-      });
-      setProjectsArray(uniqueRepos);
-    } catch (error) {
-      console.error(error.message);
     }
-  }, [allReposAPI, length, specfic, specficReposAPI]);
+
+    const uniqueUrls = new Set();
+    const uniqueRepos = repoList.filter(repo => {
+      if (repo && repo.svn_url && !uniqueUrls.has(repo.svn_url)) {
+        uniqueUrls.add(repo.svn_url);
+        return true;
+      }
+      return false;
+    });
+    setProjectsArray(uniqueRepos);
+  }, [profiles]);
 
   useEffect(() => {
     fetchRepos();
