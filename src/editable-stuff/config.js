@@ -60,9 +60,10 @@ const repos = {
   show: true,
   it: { heading: "Progetti Recenti" },
   en: { heading: "Recent Projects" },
-  gitHubUsername: "SimonKolaa", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: ["portfolio-backend"],
+  gitHubUsername: "simonkolaaa", //i.e."johnDoe12Gh"
+  gitHubUsername: "SimonKolaa",
+  reposLength: 6,
+  specificRepos: ["portfolio-backend", "checkfeed-bot"],
 };
 
 // Leadership SECTION
