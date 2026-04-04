@@ -76,6 +76,8 @@ const Home = React.forwardRef((props, ref) => {
   );
 });
 
+import ArusWidget from "./components/ArusWidget";
+
 const MainAppContent = () => {
   const titleRef = React.useRef();
   const { language } = React.useContext(LanguageContext);
@@ -95,6 +97,7 @@ const MainAppContent = () => {
           />
         )}
       </Footer>
+      <ArusWidget />
     </BrowserRouter>
   );
 };
