@@ -44,11 +44,11 @@ const about = {
   show: true,
   it: {
     heading: "Chi Sono",
-    message: "Sono uno studente di informatica appassionato dello sviluppo web e backend. Ho studiato linguaggi e framework come Python, Flask, HTML, JS, JSON e vari strumenti DevOps."
+    message: "Sono uno studente di informatica appassionato dello sviluppo web e backend. Ho studiato linguaggi e framework come Python, Flask, HTML, JS, JSON e vari strumenti DevOps, sto attualmente imparando ulteriori linguaggi come React, Go e Rust."
   },
   en: {
     heading: "About Me",
-    message: "I am a Computer Science student passionate about web and backend development. I have studied languages and frameworks such as Python, Flask, HTML, JS, JSON, and various DevOps tools."
+    message: "I am a Computer Science student passionate about web and backend development. I have studied languages and frameworks such as Python, Flask, HTML, JS, JSON, and various DevOps tools, I am currently learning additional languages such as React, Go and Rust."
   },
   imageLink: require("../editable-stuff/simonkola.png"),
   imageSize: 300,
