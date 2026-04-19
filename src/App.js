@@ -43,6 +43,7 @@ const Home = React.forwardRef((props, ref) => {
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
+          roadmap={about.roadmap}
         />
       )}
       {

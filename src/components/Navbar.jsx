@@ -3,7 +3,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, skills, experiences } from "../editable-stuff/config.js";
+import { mainBody, about, repos, skills, experiences } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
 import { LanguageContext } from "../context/LanguageContext";
 
@@ -67,6 +67,17 @@ const Navigation = React.forwardRef((props, ref) => {
           >
             About
           </NavLink>
+          {about.roadmap && (
+            <NavLink
+              className="nav-item lead"
+              href={about.roadmap}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setExpanded(false)}
+            >
+              Roadmaps
+            </NavLink>
+          )}
           {experiences.show && (
             <NavLink
               className="nav-item lead"
