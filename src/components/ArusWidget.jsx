@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./ArusWidget.css";
 
-const ARUS_API_URL = "https://simonkolaaa.pythonanywhere.com/api/chat/arus";
+const ARUS_API_URL = "https://simonkolaaa.pythonanywhere.com/api/arus";
 
 const ArusWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,38 +46,19 @@ const ArusWidget = () => {
         body: JSON.stringify({ message: userMessage }),
       });
 
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder("utf-8");
+      const data = await response.json();
 
-      setMessages((prev) => [...prev, { sender: "system", text: "" }]);
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        const chunkText = decoder.decode(value, { stream: true });
-        const events = chunkText.split("\n\n");
-
-        for (let ev of events) {
-          if (ev.startsWith("data: ")) {
-            const dataStr = ev.replace("data: ", "").trim();
-            if (!dataStr || dataStr === "{}") continue;
-
-            const parsed = JSON.parse(dataStr);
-            if (parsed.chunk) {
-              setMessages((prev) => {
-                const updated = [...prev];
-                updated[updated.length - 1].text += parsed.chunk;
-                return updated;
-              });
-            }
-          }
-        }
+      if (response.ok && data.reply) {
+        setMessages((prev) => [...prev, { sender: "system", text: data.reply }]);
+      } else if (data.error) {
+        setMessages((prev) => [...prev, { sender: "system", text: data.error }]);
+      } else {
+        setMessages((prev) => [...prev, { sender: "system", text: "Non ho capito. Riprova!" }]);
       }
     } catch (e) {
       setMessages((prev) => [
         ...prev,
-        { sender: "system", text: "Connessione persa col server operativo di Simon." },
+        { sender: "system", text: "Connessione persa. Riprova tra qualche secondo." },
       ]);
     }
 
