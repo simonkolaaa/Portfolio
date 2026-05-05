@@ -53,7 +53,7 @@ const about = {
   imageLink: require("../editable-stuff/simonkola.png"),
   imageSize: 300,
   resume: "",
-  roadmap: "https://developer-roadmap-simonkolaa-nrtzco5bw-simonkolaaas-projects.vercel.app",
+  roadmap: "https://developer-roadmap-simonkolaa.vercel.app",
 };
 
 // PROJECTS SECTION
