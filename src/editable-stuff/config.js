@@ -104,6 +104,9 @@ const skills = {
     { name: "HTML/CSS", value: 90 },
     { name: "JavaScript", value: 80 },
     { name: "SQL", value: 70 },
+    { name: "React", value: 60 },
+    { name: "Go", value: 30 },
+    { name: "Rust", value: 40 },
   ],
   softSkills: [
     { name: "Lavorare per Obiettivi", value: 80 },
@@ -154,7 +157,10 @@ const experiences = {
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
-          "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg"
+          "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg"
         ],
         date: 'Fino al 2026',
       }
@@ -171,7 +177,10 @@ const experiences = {
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
-          "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg"
+          "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg"
         ],
         date: 'Until 2026',
       }
