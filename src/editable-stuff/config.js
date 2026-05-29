@@ -172,7 +172,7 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
           "https://www.cursor.com/assets/images/logo.svg",
-          "https://upload.wikimedia.org/wikipedia/commons/e/ec/Google_Antigravity_Logo.svg"
+          "https://cdn.worldvectorlogo.com/logos/google-antigravity.svg"
         ],
         date: '2024 - Presente',
       },
@@ -181,9 +181,9 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-          "https://upload.wikimedia.org/wikipedia/commons/4/47/Claude_Ai.svg",
-          "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg",
-          "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png"
+          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.svg",
+          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.svg",
+          "https://n8n.io/favicon.ico"
         ],
         date: 'Tecnologie',
       }
@@ -215,7 +215,7 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
           "https://www.cursor.com/assets/images/logo.svg",
-          "https://upload.wikimedia.org/wikipedia/commons/e/ec/Google_Antigravity_Logo.svg"
+          "https://cdn.worldvectorlogo.com/logos/google-antigravity.svg"
         ],
         date: '2024 - Present',
       },
@@ -224,9 +224,9 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-          "https://upload.wikimedia.org/wikipedia/commons/4/47/Claude_Ai.svg",
-          "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg",
-          "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png"
+          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.svg",
+          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.svg",
+          "https://n8n.io/favicon.ico"
         ],
         date: 'Technologies',
       }
