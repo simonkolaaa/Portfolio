@@ -44,11 +44,11 @@ const about = {
   show: true,
   it: {
     heading: "Chi Sono",
-    message: "Sono uno studente di informatica con una forte passione per lo sviluppo web e le architetture backend. Nel corso dei miei studi e dei miei progetti personali ho approfondito l'utilizzo di linguaggi e framework come Python, Flask, HTML, CSS, JS, JSON e diversi strumenti DevOps. Attualmente sto espandendo le mie competenze esplorando il mondo del frontend con React e linguaggi di sistema performanti come Go e Rust. Mi piace affrontare sfide complesse, trovare soluzioni eleganti ai problemi e tenermi costantemente aggiornato sulle ultime tecnologie, con l'obiettivo di diventare un Software Engineer completo e versatile."
+    message: "Sono uno studente di informatica con una forte passione per lo sviluppo web e le architetture backend. Nel corso dei miei studi e dei miei progetti personali ho approfondito l'utilizzo di linguaggi e framework come Python, Flask, HTML, CSS, JS, JSON e diversi strumenti DevOps. Attualmente sto espandendo le mie competenze esplorando il mondo del frontend con React e linguaggi di sistema performanti come Rust. Mi piace affrontare sfide complesse, trovare soluzioni ai problemi e tenermi costantemente aggiornato sulle ultime tecnologie."
   },
   en: {
     heading: "About Me",
-    message: "I am a Computer Science student with a strong passion for web development and backend architectures. Throughout my studies and personal projects, I have deepened my knowledge of languages and frameworks such as Python, Flask, HTML, CSS, JS, JSON, and various DevOps tools. Currently, I am expanding my skill set by exploring frontend development with React and high-performance system languages like Go and Rust. I enjoy tackling complex challenges, finding elegant solutions to problems, and keeping constantly updated on the latest technologies, with the goal of becoming a complete and versatile Software Engineer."
+    message: "I am a Computer Science student with a strong passion for web development and backend architectures. Throughout my studies and personal projects, I have deepened my knowledge of languages and frameworks such as Python, Flask, HTML, CSS, JS, JSON, and various DevOps tools. Currently, I am expanding my skill set by exploring frontend development with React and high-performance system languages like Rust. I enjoy tackling complex challenges, finding solutions to problems, and keeping constantly updated on the latest technologies."
   },
   imageLink: require("../editable-stuff/simonkola.png"),
   imageSize: 300,
@@ -161,7 +161,9 @@ const experiences = {
           "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg"
         ],
         date: 'Fino al 2026',
       },
@@ -179,9 +181,9 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg",
-          "https://cdn.jsdelivr.net/npm/@thesvg/icons/icons/n8n.svg"
+          "https://upload.wikimedia.org/wikipedia/commons/4/47/Claude_Ai.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg",
+          "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png"
         ],
         date: 'Tecnologie',
       }
@@ -202,7 +204,9 @@ const experiences = {
           "https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg"
         ],
         date: 'Until 2026',
       },
@@ -220,9 +224,9 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg",
-          "https://cdn.jsdelivr.net/npm/@thesvg/icons/icons/n8n.svg"
+          "https://upload.wikimedia.org/wikipedia/commons/4/47/Claude_Ai.svg",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg",
+          "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png"
         ],
         date: 'Technologies',
       }
