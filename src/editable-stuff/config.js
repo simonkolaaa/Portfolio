@@ -172,7 +172,7 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
           "https://www.cursor.com/assets/images/logo.svg",
-          "https://cdn.worldvectorlogo.com/logos/google-antigravity.svg"
+          require("../assets/antigravity.svg")
         ],
         date: '2024 - Presente',
       },
@@ -215,7 +215,7 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
           "https://www.cursor.com/assets/images/logo.svg",
-          "https://cdn.worldvectorlogo.com/logos/google-antigravity.svg"
+          require("../assets/antigravity.svg")
         ],
         date: '2024 - Present',
       },
