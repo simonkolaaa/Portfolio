@@ -172,7 +172,7 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
           "https://www.cursor.com/assets/images/logo.svg",
-          require("../assets/antigravity.svg")
+          "https://unpkg.com/@lobehub/icons-static-svg/icons/antigravity-color.svg"
         ],
         date: '2024 - Presente',
       },
@@ -215,7 +215,7 @@ const experiences = {
         companylogo: [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
           "https://www.cursor.com/assets/images/logo.svg",
-          require("../assets/antigravity.svg")
+          "https://unpkg.com/@lobehub/icons-static-svg/icons/antigravity-color.svg"
         ],
         date: '2024 - Present',
       },
